@@ -26,7 +26,7 @@
      * that defines a riot tag with template and the class.
      * see riot.tag()
      */
-    function tag(name, tmpl) {
+    function Tag(name, tmpl) {
         return function (target) {
             // target is the constructor function
             if (typeof tmpl === 'object') {
@@ -38,7 +38,7 @@
         };
     }
 
-    exports.tag = tag;
+    exports.Tag = Tag;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

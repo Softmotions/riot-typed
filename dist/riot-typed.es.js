@@ -22,7 +22,7 @@ function register(name, props, target) {
  * that defines a riot tag with template and the class.
  * see riot.tag()
  */
-function tag$1(name, tmpl) {
+function Tag(name, tmpl) {
     return function (target) {
         // target is the constructor function
         if (typeof tmpl === 'object') {
@@ -34,4 +34,4 @@ function tag$1(name, tmpl) {
     };
 }
 
-export { tag$1 as tag };
+export { Tag };
