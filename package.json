@@ -11,19 +11,12 @@
     "riot.js",
     "js-component"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Joylei/riot-typed.git"
-  },
-  "author": "joylei <leingliu@gmail.com>",
-  "license": "MIT",
-  "engines": {
-    "node": ">=4.0.0"
-  },
   "main": "dist/riot-typed.cjs.js",
   "module": "dist/riot-typed.es.js",
   "jsnext:main": "dist/riot-typed.es.js",
-  "types": "src/riot-typed.d.ts",
+  "types": "riot-typed.d.ts",
+  "author": "joylei <leingliu@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "npm run build",
     "dist": "rollup -c",
@@ -32,6 +25,10 @@
     "clean": "shx rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "@types/riot": "^3.6.1",
+    "@types/riot-route": "^3.1.0"
+  },
   "devDependencies": {
     "@types/node": "8.10.10",
     "riot": "^3.9.4",
@@ -39,15 +36,11 @@
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-typescript": "^0.8.1",
     "shx": "^0.2.2",
+    "typescript": "^2.8.3",
     "uglify-js": "^3.3.22"
   },
   "files": [
     "src",
     "dist"
-  ],
-  "dependencies": {
-    "eslint": "^4.19.1",
-    "tslint": "^5.9.1",
-    "typescript": "^2.8.3"
-  }
+  ]
 }

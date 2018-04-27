@@ -22,10 +22,10 @@ function register(name, props, target) {
     });
 }
 /**
-* decorator on class that extends Tag.
-* that defines a riot tag with template and the class.
-* see riot.tag()
-*/
+ * decorator on class that extends Tag.
+ * that defines a riot tag with template and the class.
+ * see riot.tag()
+ */
 function tag(name, tmpl) {
     return function (target) {
         // target is the constructor function
@@ -37,10 +37,5 @@ function tag(name, tmpl) {
         }
     };
 }
-/**
-   riot tag
-  */
-var Tag = function Tag () {};
 
 exports.tag = tag;
-exports.Tag = Tag;

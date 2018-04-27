@@ -1,17 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "es2015",
-        "module": "es2015",
-        "sourceMap": false,
-        "removeComments": false,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "rootDir": "src",
-        "outDir": "dist",
-        "isolatedModules":true
-    },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "declaration": false,
+    "sourceMap": false,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "exclude": [
-        "node_modules/**"
-    ]
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "isolatedModules": false
+  },
+  "experimentalDecorators": true,
+  "exclude": [
+    "node_modules"
+  ]
 }

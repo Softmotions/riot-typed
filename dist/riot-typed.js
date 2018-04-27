@@ -22,10 +22,10 @@
         });
     }
     /**
-    * decorator on class that extends Tag.
-    * that defines a riot tag with template and the class.
-    * see riot.tag()
-    */
+     * decorator on class that extends Tag.
+     * that defines a riot tag with template and the class.
+     * see riot.tag()
+     */
     function tag(name, tmpl) {
         return function (target) {
             // target is the constructor function
@@ -37,13 +37,8 @@
             }
         };
     }
-    /**
-       riot tag
-      */
-    var Tag = function Tag () {};
 
     exports.tag = tag;
-    exports.Tag = Tag;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
