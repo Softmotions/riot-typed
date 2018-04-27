@@ -4,7 +4,7 @@ import typescript from 'rollup-plugin-typescript'
 const pkg = require( './package.json' );
 
 export default {
-    entry: 'src/index.ts',
+    input: 'src/index.ts',
     external:['riot'],
     plugins: [
         typescript({
@@ -12,19 +12,20 @@ export default {
         }),
         buble()
     ],
-    targets: [
+    output: [
 		{
 			format: 'cjs',
-			dest: pkg.main
+			file: pkg.main
         },
         {
             format: 'umd',
-            moduleName:'riot-typed',
-			dest: 'dist/riot-typed.js'
+            moduleName: 'riot-typed',
+            name: 'riot-typed',
+			file: 'dist/riot-typed.js'
 		},
 		{
 			format: 'es',
-			dest: pkg.module
+			file: pkg.module
 		}
 	]
 }

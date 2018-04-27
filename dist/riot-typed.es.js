@@ -1,5 +1,4 @@
-import { tag, util } from 'riot';
-import * as riot from 'riot';
+import { util, tag } from 'riot';
 
 var DEF_KEY = '_TAG_DEF';
 function register(name, props, target) {
