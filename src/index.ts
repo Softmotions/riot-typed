@@ -72,7 +72,10 @@ export class Tag<TOpts> implements RiotTag {
   /**
   * apply update on elements
   */
-  update: (data?: any) => void;
+  update: (data?: any) => RiotTag[];
+
+
+  shouldUpdate: (data: any, nextOpts: any) => boolean;
 
   /**
   * unmount Tag
