@@ -1,6 +1,6 @@
 {
-  "name": "riot-typed",
-  "version": "1.1.1",
+  "name": "@softmotions/riot-typed",
+  "version": "1.1.2",
   "description": "a tiny wrapper layer for riotjs to write riot tags with benefits of typescipt",
   "keywords": [
     "riot-typed",
@@ -14,9 +14,12 @@
   "main": "dist/riot-typed.cjs.js",
   "module": "dist/riot-typed.es.js",
   "jsnext:main": "dist/riot-typed.es.js",
-  "types": "riot-typed.d.ts",
-  "author": "joylei <leingliu@gmail.com>",
+  "types": "src/riot-typed.d.ts",
+  "author": "Adamansky Anton <adamansky@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "npm run build",
     "dist": "rollup -c",
